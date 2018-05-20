@@ -3,11 +3,11 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:	Program 2
+ * Assignment:		Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the methods for the heap that is created with sequential insertion.
- * 				It will reheap the max heap after each node is added.
+ * 			It will reheap the max heap after each node is added.
  * 
  */
 
