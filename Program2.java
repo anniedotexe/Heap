@@ -3,7 +3,7 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:	Program 2
+ * Assignment:		Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the user interactions and the two types of heaps that will be built.
@@ -15,9 +15,9 @@ import java.util.*;
 public class Program2 {
 	private String lineBreak = "\n==========================================================================\n";
 	private String prompt = "\nPlease select how to test the program:" +
-							"\n(1) 20 sets of 100 randomly generated integers" +
-							"\n(2) Fixed integer values 1-100" +
-							"\nEnter choice: ";
+				"\n(1) 20 sets of 100 randomly generated integers" +
+				"\n(2) Fixed integer values 1-100" +
+				"\nEnter choice: ";
 	private String avgSequential = "\nAverage number of swaps for series of insertions: ";
 	private String avgOptimal = "\nAverage swaps for optimal method: ";
 	private String invalidInput = "Invalid Input. Enter 1 or 2.";
