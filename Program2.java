@@ -3,7 +3,7 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:	Program 2
+ * Assignment:		Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the user interactions and the two types of heaps that will be built.

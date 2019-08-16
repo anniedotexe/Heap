@@ -3,11 +3,11 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:	Program 2
+ * Assignment:		Program 2
  * Date:		3 February 2018
  * 
- * Purpose:		This file contains the methods for heap that is built with the optimal method,
- * 				which is to reheap after all the nodes have been added to the max heap.
+ * Purpose:		This file contains the methods for heap that is built with the optimal method.
+ * 			It will reheap after all the nodes have been added to the max heap.
  * 
  */
 
