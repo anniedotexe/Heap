@@ -1,4 +1,4 @@
-# Heap
+# Max Heap
 This program will create a max heap in two ways:
 <li>Series of Insertions - It will reheap the max heap after <i>each</i> node is added.</li>
 <li>Optimal Method - It will reheap after <i>all</i> the nodes have been added to the max heap.</li>
