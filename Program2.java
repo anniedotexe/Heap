@@ -3,7 +3,7 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:		Program 2
+ * Assignment:	Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the user interactions and the two types of heaps that will be built.
@@ -13,11 +13,13 @@
 import java.util.*;
 
 public class Program2 {
-	private String lineBreak = "\n==========================================================================\n";
+
+	private String lineBreak = "\n\n==========================================================================\n";
 	private String prompt = "\nPlease select how to test the program:" +
-				"\n(1) 20 sets of 100 randomly generated integers" +
-				"\n(2) Fixed integer values 1-100" +
-				"\nEnter choice: ";
+							"\n(1) 20 sets of 100 randomly generated integers" +
+							"\n(2) Fixed integer values 1-100" +
+							"\n(3) Exit" +
+							"\nEnter choice: ";
 	private String avgSequential = "\nAverage number of swaps for series of insertions: ";
 	private String avgOptimal = "\nAverage swaps for optimal method: ";
 	private String invalidInput = "Invalid Input. Enter 1 or 2.";
@@ -25,6 +27,7 @@ public class Program2 {
 	private String optimalMethod = "\n\nHeap built using optimal method: ";	
 	private String swapNumber = "\nNumber of swaps: ";
 	private String afterTenRemovals = "\nHeap after 10 removals: ";
+	private String endProgram = "\nThanks for using my program!";
 	private int hundredRandom = 100;
 	
 	public static void main(String[] args) {	
@@ -46,14 +49,14 @@ public class Program2 {
 			System.out.print(prompt);
 			choice = sc.next();
 			switch (choice) {
-				case "1":
-					//this is the test for 20 sets of randomly generated integers
+				case "1": //20 sets of randomly generated integers
 					random();
 					break;
-				case "2":
-					//this is the test for fixed integers
+				case "2": //fixed integers
 					fixed();
-					System.out.print(lineBreak);
+					break;
+				case "3":
+					System.out.println(endProgram);
 					exit = true;
 					break;
 				default:

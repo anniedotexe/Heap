@@ -3,11 +3,11 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:		Program 2
+ * Assignment:	Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the methods for the heap that is created with sequential insertion.
- * 			It will reheap the max heap after each node is added.
+ * 				It will reheap the max heap after each node is added.
  * 
  */
 
@@ -35,7 +35,7 @@ public class Heap {
 	 * This is the function add.
 	 * The purpose is to add a value into the heap with sequential insertion.
 	 * Add at leaf level and compare to the parent (up-heap), swap if in wrong order.
-	 * @param value
+	 * @param value value to add
 	 */
 	public void add(int value) {
 		//check if the value exists in the heap
@@ -96,10 +96,8 @@ public class Heap {
 	/**
 	 * This is the function swap.
 	 * The purpose is to swap two numbers.
-	 * It will create a temporary number and set that as the first number in the heap,
-	 * swap the first number and second number in the heap,
-	 * set the second number in the heap as the temporary number,
-	 * and increase the swap count.
+	 * @param firstNumber first number to swap
+	 * @param secondNumber second number to swap
 	 */
 	public void swap(int firstNumber, int secondNumber) {
 		int temperary = heap[firstNumber];
@@ -111,6 +109,7 @@ public class Heap {
 	/**
 	 * This is the function numberOfSwaps.
 	 * The purpose is to get the number of swaps.
+	 * @return number of swaps
 	 */
 	public int numberOfSwaps() {
 		return swaps;
@@ -119,6 +118,8 @@ public class Heap {
 	/**
 	 * This is the function exists.
 	 * The purpose is to check to see if a value exists in the heap.
+	 * @param value given value
+	 * @return true if the value exists
 	 */
 	public boolean exists(int value) {
 		for (int i = 0; i < size; i++) {

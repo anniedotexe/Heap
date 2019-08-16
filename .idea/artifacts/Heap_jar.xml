@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Heap:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Heap_jar</output-path>
+    <root id="archive" name="Heap.jar">
+      <element id="module-output" name="Heap" />
+    </root>
+  </artifact>
+</component>

@@ -3,11 +3,11 @@
  * Author:		Annie Wu
  * Class:		CS 241 - Data Structures and Algorithms II
  * 
- * Assignment:		Program 2
+ * Assignment:	Program 2
  * Date:		3 February 2018
  * 
  * Purpose:		This file contains the methods for heap that is built with the optimal method,
- * 			which is to reheap after all the nodes have been added to the max heap.
+ * 				which is to reheap after all the nodes have been added to the max heap.
  * 
  */
 
@@ -35,6 +35,7 @@ public class OptimalHeap {
 	 * This is the function add.
 	 * The purpose is to add a value into the heap with the optimal method.
 	 * The values are added with no swaps.
+	 * @param value value to add
 	 */
 	public void add(int value) {
 		//check if the value exists in the heap
@@ -74,6 +75,7 @@ public class OptimalHeap {
 	 * This is the function upheap.
 	 * The purpose is to reheap going up from index n/2,
 	 * where n is the number of nodes in the heap.
+	 * @param index last value in the heap
 	 */
 	public void upHeap(int index) {
 		
@@ -114,6 +116,7 @@ public class OptimalHeap {
 	 * This is the function downHeap.
 	 * The purpose is to reheap down from the current index.
 	 * This makes sure the parent stays greater than the child.
+	 * @param current current value
 	 */
 	public void downHeap(int current) {
 		//if the right child is greater than the last value in the heap, don't swap
@@ -145,10 +148,8 @@ public class OptimalHeap {
 	/**
 	 * This is the function swap.
 	 * The purpose is to swap two numbers.
-	 * It will create a temporary number and set that as the first number in the heap,
-	 * swap the first number and second number in the heap,
-	 * set the second number in the heap as the temporary number,
-	 * and increase the swap count.
+	 * @param firstNumber first number to swap
+	 * @param secondNumber second number to swap
 	 */
 	public void swap(int firstNumber, int secondNumber) {
 		int temperary = heap[firstNumber];
@@ -160,6 +161,7 @@ public class OptimalHeap {
 	/**
 	 * This is the function numberOfSwaps.
 	 * The purpose is to get the number of swaps.
+	 * @return number of swaps
 	 */
 	public int numberOfSwaps() {
 		return swaps;
@@ -168,6 +170,8 @@ public class OptimalHeap {
 	/**
 	 * This is the function exists. 
 	 * The purpose is to check to see if a value exists in the heap.
+	 * @param value given value
+	 * @return true if the value exists
 	 */
 	public boolean exists(int value) {
 		for (int i = 0; i < size; i++) {
